@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(83, 83, 83);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 88%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+h1{
+    color: white;
+    margin: 15px;
+}
+.boxes{
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.box{
+    width: 32%;
+}
+.box:hover{
+    box-shadow: 0 25px 25px 0 rgba(107, 29, 29, 0.562);
+
+}
+li{
+    list-style-type: none;
+    height: 40px;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.green{
+    background: rgb(47, 184, 70);
+    font-size: 25px;
+    color: white;
+}
+.black  {
+    background: black;
+    font-size: 25px;
+    color: white;
+}
+.grey{
+    background: lightgrey;
+}
+button{
+    padding: 7px 15px;
+    border: none;
+    background: rgb(47, 184, 70);
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+strong{
+    margin-right: 5px;
+}
+
+@media (max-width : 650px){
+
+    h1{
+        font-size: 25px;
+    }
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+    .boxes{
+        padding: 10px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}
